@@ -1,0 +1,418 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    overflow: auto;
+    background-color: black;
+}
+
+body{
+    overflow: auto;
+}
+
+
+.mainheader{
+    height: 13.5%;
+    width: 100%;
+    border-bottom: 0.1px solid rgb(214,187,111);
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.logocontainer{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1%;
+}
+.logocontainer img{
+    width: 70%;
+}
+.navcontainer{
+    width: 65%;
+    margin-left: 2.5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.navcontainer a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.searchcont{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchcont input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 35px;
+    border:none;
+    background-color: 	rgba(128, 128, 128, 0.3);
+    color: white;
+}
+input[type="text"]::placeholder {
+    font-size: 1.2em;
+    font-family: "Alegreya SC";
+    color: gray;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.banner{
+    height: 86.5%;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1px solid rgb(214,187,111);
+    box-sizing: border-box;
+}
+#sideimg{
+    width: 25%;
+    min-width: 335px;   
+    background-image: url("img/sideimg.jpg");
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+
+.timesec{
+    width:75%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#p1 {
+    font-size: 1.5vw;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+}
+#p2 {
+    margin-top:0;
+    font-size: 3.3vw;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 80%;
+}
+.countdown section{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    min-height: 250px;
+    width: 25%;
+    align-items: center;
+}
+.countdown p{
+    font-size: 1.5rem;
+}
+.countdown div{
+    height: 70%;
+    width: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    font-family: 'Supreme', sans-serif;
+}
+.productcarousel{
+    height: 90%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.1px solid rgb(214,187,111);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+
+
+.carouselhead{
+    margin-top:0px;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.carouselcont {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 70%;
+    max-width: 1000px;
+    border: 0.1px solid rgb(214,187,111);
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 95%;
+    height:95%;   
+}
+
+#carouselbuttonleft,
+#carouselbuttonright {
+  background-color: rgba(214,187,111,1);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#carouselbuttonleft{
+    left:1%;
+}
+#carouselbuttonright{
+    right:1%;
+}
+.track {
+    display:flex;
+    transition: transform 0.5s ease;
+}
+.product{  
+    width:50vw;
+    text-align: center;
+    height:100%;
+    box-sizing: border-box;
+    border: 0.1px solid rgb(214,187,111);
+    display: flex;
+    flex-direction: row;
+}
+#a1{
+    margin-left:2.4%;
+}
+#a2{
+    margin-left:1%;
+}
+#a3{
+    margin-left: 1%;
+}
+#a4{
+    margin-left: 1%;
+}
+#a5{
+    margin-left:1%;
+}
+
+.prodimg, .prodesc{
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-wrap: wrap;
+}
+.prodimg{
+    border-right: 0.1px solid rgb(214,187,111);
+    overflow: hidden;
+    position: relative;
+}
+.prodesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.prodname{
+    font-size: 1.5rem;
+}
+.shortdesc{
+    font-size: 1rem;
+    margin:0;
+}
+.price{
+    font-size: 2rem;
+}
+.shopbutton{
+    width:50%;
+    height: 10%;
+    border-radius: 1.5em;
+    border:none;   
+    font-family: 'Alegreya SC';
+    font-weight: 700;
+    background-color: rgb(204,58,55);
+    color: white;
+    cursor: pointer;
+}
+.contactitle{
+    padding-top: 2.5%;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1%;
+}
+.lastsec{
+    height: 60%;
+    background-color: black;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutsec{
+    width:50%;
+}
+
+.actimg{
+
+    transform-origin: center;
+    height:auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.contactsec{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactform{
+    margin:auto;
+    width:50%;
+    border: 2px solid white;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactitle{
+padding-top: 1%;
+margin:0;
+}
+.upper, .lower{
+    height: 20%;
+    width: 50%;
+}
+.lower{
+    height: 40%;
+    margin-bottom:1%;
+}
+.upper{
+    display:flex;
+    flex-direction: row;
+    margin-bottom:1%;
+}
+.namefield, .emailfield{
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.namefield input {
+    width: 95%;
+    height: 2rem;
+    border-radius: 35px;
+    border:none;
+    background-color: 	rgba(128, 128, 128, 0.3);
+    color: white;
+}
+.emailfield input{
+    width: 95%;
+    height: 2rem;
+    border-radius: 35px;
+    border:none;
+    background-color: 	rgba(128, 128, 128, 0.3);
+    color: white;
+}
+.lower input{
+    width: 98%;
+    height: 70%;
+    border-radius: 35px;
+    border:none;
+    background-color: 	rgba(128, 128, 128, 0.3);
+    color: white;
+    vertical-align: top;
+    padding-top: 0;
+}
+.contactsec button{
+    font-size: 1.3rem;
+    margin-top: 0;
+    width:25%;
+    height: 10%;
+    border-radius: 1.5em;
+    border:none;   
+    font-family: 'Alegreya SC';
+    font-weight: 700;
+    background-color: rgb(204,58,55);
+    color: white;
+    cursor: pointer;
+}
+input[type="email"]::placeholder {
+    font-size: 1.2em;
+    font-family: "Alegreya SC";
+    color: gray;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    overflow: auto;
+    z-index: 5;
+    height:100%;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    flex-direction: center;
+    align-items: center
+}
+.modalcont{
+    margin: auto;
+    height:30%;
+    width:40%;
+    border: 0.1px solid rgb(214,187,111);
+    background-color: rgb(12, 12, 12);
+    border-radius: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.modalcont button{
+    font-size: 1.3rem;
+    margin-top: 0;
+    width:25%;
+    height: 15%;
+    border-radius: 1rem;
+    border:none;   
+    font-family: 'Alegreya SC';
+    font-weight: 700;
+    background-color: rgb(204,58,55);
+    color: white;
+    cursor: pointer;
+}
